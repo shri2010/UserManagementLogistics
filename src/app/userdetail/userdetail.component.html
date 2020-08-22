@@ -1,0 +1,54 @@
+<div align="center">
+    <mat-card class="card" align="center">
+        <mat-card-header>
+            <mat-card-title>User Details</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <form [formGroup]="userDetailForm" (ngSubmit)="onSubmit(userDetailForm.value)">
+                <mat-form-field appearance="fill" class="form-element">
+                    <mat-label>Enter your name</mat-label>
+                    <input matInput placeholder="name" required formControlName="name" />
+                </mat-form-field>
+                <br />
+                <mat-form-field appearance="fill" class="form-element">
+                    <mat-label>Enter your username</mat-label>
+                    <input matInput placeholder="username" required formControlName="username" />
+                </mat-form-field>
+                <br />
+                <mat-form-field appearance="fill" class="form-element">
+                    <mat-label>Enter your age</mat-label>
+                    <input matInput placeholder="age" required formControlName="age" />
+                </mat-form-field>
+                <br />
+                <mat-form-field appearance="fill" class="form-element">
+                    <mat-label>Enter your city</mat-label>
+                    <input matInput placeholder="city" required formControlName="city" />
+                </mat-form-field>
+                <br />
+
+                <mat-slide-toggle
+                    color="primary"
+                    formControlName="isadmin"
+                    appearance="fill"
+                    class="form-element"
+                    *ngIf="isAdmin"
+                >
+                    Admin
+                </mat-slide-toggle>
+
+                <br />
+
+                <button
+                    mat-raised-button
+                    color="primary"
+                    type="submit"
+                    class="button"
+                    [disabled]="!userDetailForm.valid"
+                >
+                    Submit
+                </button>
+                <button mat-raised-button color="warn" routerLink="/users">Cancel</button>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>
