@@ -29,11 +29,9 @@ import { UserdetailComponent } from '../userdetail/userdetail.component';
 describe('LoginComponent', () => {
     let component: LoginComponent;
     let fixture: ComponentFixture<LoginComponent>;
-    class UserDataServiceTest {
-
-    }
+    class UserDataServiceTest {}
     class RouterTest {
-        navigate(path: any) { }
+        navigate(path: any) {}
     }
 
     class AuthServiceTest {
@@ -63,9 +61,7 @@ describe('LoginComponent', () => {
                 FormsModule,
                 MatSlideToggleModule,
             ],
-            declarations: [
-                AppComponent, UsersComponent, UserdetailComponent, LoginComponent
-            ],
+            declarations: [AppComponent, UsersComponent, UserdetailComponent, LoginComponent],
 
             providers: [
                 { provide: Router, useClass: RouterTest },

@@ -20,6 +20,7 @@ import { LoginComponent } from './login/login.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
     declarations: [AppComponent, UsersComponent, UserdetailComponent, LoginComponent],
@@ -42,6 +43,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
         MatProgressSpinnerModule,
         FormsModule,
         MatSlideToggleModule,
+        MatSnackBarModule,
     ],
     providers: [],
     bootstrap: [AppComponent],

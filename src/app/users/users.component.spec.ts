@@ -28,66 +28,63 @@ import { User } from '../Model/user';
 import { of } from 'rxjs';
 
 describe('UsersComponent', () => {
-  let component: UsersComponent;
-  let fixture: ComponentFixture<UsersComponent>;
-  let user = new User();
-  user.id = 1;
-  class UserDataServiceTest {
-    getUserById(id: any) {
-      return of(user)
+    let component: UsersComponent;
+    let fixture: ComponentFixture<UsersComponent>;
+    let user = new User();
+    user.id = 1;
+    class UserDataServiceTest {
+        getUserById(id: any) {
+            return of(user);
+        }
     }
-  }
-  class RouterTest {
-    navigate(path: any) { }
-  }
-
-  class AuthServiceTest {
-    currentUserValue() {
-
-      return user;
+    class RouterTest {
+        navigate(path: any) {}
     }
-  }
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      imports: [
-        BrowserModule,
-        AppRoutingModule,
-        BrowserAnimationsModule,
-        MatToolbarModule,
-        MatIconModule,
-        HttpClientModule,
-        MatTableModule,
-        CdkTableModule,
-        MatGridListModule,
-        MatButtonModule,
-        ReactiveFormsModule,
-        MatFormFieldModule,
-        MatInputModule,
-        MatCardModule,
-        MatDialogModule,
-        MatProgressSpinnerModule,
-        FormsModule,
-        MatSlideToggleModule,
-      ],
-      declarations: [
-        AppComponent, UsersComponent, UserdetailComponent, LoginComponent
-      ],
+    class AuthServiceTest {
+        currentUserValue() {
+            return user;
+        }
+    }
 
-      providers: [
-        { provide: Router, useClass: RouterTest },
-        { provide: AuthService, useClass: AuthServiceTest },
-        { provide: UserDataServiceService, useClass: UserDataServiceTest },
-      ],
-    }).compileComponents();
-  }));
-  beforeEach(() => {
-    fixture = TestBed.createComponent(UsersComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    beforeEach(async(() => {
+        TestBed.configureTestingModule({
+            imports: [
+                BrowserModule,
+                AppRoutingModule,
+                BrowserAnimationsModule,
+                MatToolbarModule,
+                MatIconModule,
+                HttpClientModule,
+                MatTableModule,
+                CdkTableModule,
+                MatGridListModule,
+                MatButtonModule,
+                ReactiveFormsModule,
+                MatFormFieldModule,
+                MatInputModule,
+                MatCardModule,
+                MatDialogModule,
+                MatProgressSpinnerModule,
+                FormsModule,
+                MatSlideToggleModule,
+            ],
+            declarations: [AppComponent, UsersComponent, UserdetailComponent, LoginComponent],
 
-  test('should create', () => {
-    expect(component).toBeTruthy();
-  });
+            providers: [
+                { provide: Router, useClass: RouterTest },
+                { provide: AuthService, useClass: AuthServiceTest },
+                { provide: UserDataServiceService, useClass: UserDataServiceTest },
+            ],
+        }).compileComponents();
+    }));
+    beforeEach(() => {
+        fixture = TestBed.createComponent(UsersComponent);
+        component = fixture.componentInstance;
+        fixture.detectChanges();
+    });
+
+    test('should create', () => {
+        expect(component).toBeTruthy();
+    });
 });

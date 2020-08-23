@@ -20,7 +20,7 @@ export class UserDataServiceService {
     }
 
     updateUser(user: User): Observable<User> {
-        return this.httpClient.patch<User>(this.url, User);
+        return this.httpClient.patch<User>(this.url + '/' + user.id, user);
     }
 
     deleteUsers(id: string): Observable<User> {

@@ -1,36 +1,36 @@
 {
-    "users": [
-        {
-            "id": 3,
-            "name": "Zomato",
-            "username": "Zm",
-            "age": "33",
-            "city": "AlAin",
-            "isadmin": false
-        },
-        {
-            "name": "Paperlime",
-            "username": "pln",
-            "age": "56",
-            "city": "Dubai",
-            "isadmin": true,
-            "id": 4
-        },
-        {
-            "name": "Telephone",
-            "username": "TPN",
-            "age": "45",
-            "city": "Dubai",
-            "isadmin": false,
-            "id": 5
-        },
-        {
-            "name": "TestUser",
-            "username": "TSU",
-            "age": "45",
-            "city": "Sharjah",
-            "isadmin": "false",
-            "id": 6
-        }
-    ]
+  "users": [
+    {
+      "name": "Paperlime",
+      "username": "pln",
+      "age": "50",
+      "city": "Dubai",
+      "isadmin": true,
+      "id": 4
+    },
+    {
+      "name": "Telephone",
+      "username": "TPN",
+      "age": "45",
+      "city": "Dubai",
+      "isadmin": false,
+      "id": 5
+    },
+    {
+      "name": "TestUser",
+      "username": "TSU",
+      "age": "45",
+      "city": "Sharjah",
+      "isadmin": "false",
+      "id": 6
+    },
+    {
+      "name": "Telephone",
+      "username": "tphn",
+      "age": "45",
+      "city": "dubai",
+      "isadmin": false,
+      "id": 7
+    }
+  ]
 }

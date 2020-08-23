@@ -14,10 +14,10 @@ export class LoginComponent implements OnInit {
         private router: Router,
         private userDataService: UserDataServiceService,
         private authService: AuthService,
-    ) { }
+    ) {}
     username: string;
     password: string;
-    ngOnInit() { }
+    ngOnInit() {}
     login(): void {
         this.userDataService.getUsers().subscribe((users: User[]) => {
             var index = users.findIndex((usr) => this.username == usr.username);
