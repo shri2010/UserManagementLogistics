@@ -12,3 +12,7 @@
 button {
     margin-left: 0.5em;
 }
+
+.mat-card-header{
+    display:block;
+}

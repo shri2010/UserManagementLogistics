@@ -34,15 +34,11 @@
         <ng-container matColumnDef="action">
             <th mat-header-cell *matHeaderCellDef>Action</th>
             <td mat-cell *matCellDef="let element">
-                <button
-                    mat-raised-button
-                    class="success"
-                    [routerLink]="['/userDetails', element.id]"
-                    routerLinkActive="active"
-                >
+                <button mat-flat-button class="success" [routerLink]="['/userDetails', element.id]"
+                    routerLinkActive="active">
                     Edit
                 </button>
-                <button mat-raised-button color="warn" (click)="Delete(element.id)" *ngIf="isAdmin">Delete</button>
+                <button mat-flat-button color="warn" (click)="Delete(element.id)" *ngIf="isAdmin">Delete</button>
             </td>
         </ng-container>
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

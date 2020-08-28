@@ -21,9 +21,11 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { FooterComponent } from './footer/footer.component';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
-    declarations: [AppComponent, UsersComponent, UserdetailComponent, LoginComponent],
+    declarations: [AppComponent, UsersComponent, UserdetailComponent, LoginComponent, FooterComponent],
     imports: [
         BrowserModule,
         AppRoutingModule,
@@ -44,8 +46,9 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
         FormsModule,
         MatSlideToggleModule,
         MatSnackBarModule,
+        MatSortModule
     ],
     providers: [],
     bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

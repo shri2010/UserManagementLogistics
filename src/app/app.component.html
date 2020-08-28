@@ -1,20 +1,33 @@
-<mat-toolbar color="primary">
-    <span>
-        <button mat-button routerLink="/users">User Management</button>
+<div class="app">
 
-        <button mat-button routerLink="/users"><mat-icon>home</mat-icon></button>
-    </span>
-    <span class="spacer"></span>
-    <button mat-button routerLink="/login" class="loginButton" *ngIf="!isLoggedIn">
-        <mat-icon>power_settings_new</mat-icon>
+    <mat-toolbar color="primary">
+        <span>
 
-        Login
-    </button>
-    <button mat-button class="loginButton" (click)="logout()" *ngIf="isLoggedIn">
-        <mat-icon>power_settings_new</mat-icon>
 
-        Logout
-    </button>
-</mat-toolbar>
+            <button mat-button routerLink="/users">
+                <mat-icon>home</mat-icon>
+            </button>
 
-<div class="mat-app-background basic-container"><router-outlet></router-outlet></div>
+            <button mat-button routerLink="/users">User Management</button>
+        </span>
+        <span class="spacer"></span>
+        <button mat-button routerLink="/login" class="loginButton" *ngIf="!isLoggedIn">
+            <mat-icon>power_settings_new</mat-icon>
+
+            Login
+        </button>
+        <button mat-button class="loginButton" (click)="logout()" *ngIf="isLoggedIn">
+            <mat-icon>power_settings_new</mat-icon>
+
+            Logout
+        </button>
+    </mat-toolbar>
+
+    <div>
+        <router-outlet></router-outlet>
+    </div>
+
+</div>
+<div>
+    <app-footer></app-footer>
+</div>

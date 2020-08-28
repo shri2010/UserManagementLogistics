@@ -1,3 +1,10 @@
 .spacer {
     flex: 1 1 auto;
 }
+
+.app{
+    position: relative;
+    padding-bottom: 3em;
+}
+
+

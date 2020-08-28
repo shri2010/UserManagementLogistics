@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { User } from '../Model/user';
 import { UserDataServiceService } from '../Service/user-data-service.service';
 import { AuthService } from '../Service/auth.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
+
 
 @Component({
     selector: 'app-users',
@@ -17,7 +18,7 @@ export class UsersComponent implements OnInit {
         private userDataService: UserDataServiceService,
         private authService: AuthService,
         private _snackBar: MatSnackBar,
-    ) {}
+    ) { }
 
     public isAdmin: boolean;
 
@@ -33,6 +34,7 @@ export class UsersComponent implements OnInit {
         this.isAdmin = this.authService.IsAdmin;
         if (this.isAdmin) {
             this.userDataService.getUsers().subscribe((users) => {
+
                 this.users = users;
                 this.openSnackBar('Data Fetched Succesfully', 'Get');
             });
