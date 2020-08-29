@@ -163,6 +163,9 @@
                             <li>
                                 <a href="#onSubmit">onSubmit</a>
                             </li>
+                            <li>
+                                <a href="#openSnackBar">openSnackBar</a>
+                            </li>
                         </ul>
                     </td>
                 </tr>
@@ -181,12 +184,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(formBuilder: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, userService: <a href="../injectables/UserDataServiceService.html">UserDataServiceService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, route: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, authService: <a href="../injectables/AuthService.html">AuthService</a>)</code>
+<code>constructor(formBuilder: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, userService: <a href="../injectables/UserDataServiceService.html">UserDataServiceService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, route: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, authService: <a href="../injectables/AuthService.html">AuthService</a>, _snackBar: MatSnackBar)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/userdetail/userdetail.component.ts:17</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/userdetail/userdetail.component.ts:18</a></div>
                             </td>
                         </tr>
 
@@ -263,6 +266,18 @@
                                                     </td>
                                                     
                                                 </tr>
+                                                <tr>
+                                                        <td>_snackBar</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatSnackBar</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
                                         </tbody>
                                     </table>
                             </div>
@@ -303,8 +318,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="35"
-                            class="link-to-prism">src/app/userdetail/userdetail.component.ts:35</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="45"
+                            class="link-to-prism">src/app/userdetail/userdetail.component.ts:45</a></div>
                 </td>
             </tr>
 
@@ -342,8 +357,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="54"
-                            class="link-to-prism">src/app/userdetail/userdetail.component.ts:54</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="65"
+                            class="link-to-prism">src/app/userdetail/userdetail.component.ts:65</a></div>
                 </td>
             </tr>
 
@@ -366,6 +381,88 @@
                                     <td>value</td>
                                     <td>
                                                 <code><a href="../classes/User.html" target="_self" >User</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openSnackBar"></a>
+                    <span class="name">
+                        <b>
+                            openSnackBar
+                        </b>
+                        <a href="#openSnackBar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openSnackBar(message: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, action: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="37"
+                            class="link-to-prism">src/app/userdetail/userdetail.component.ts:37</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>message</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>action</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
                                     </td>
 
                                     <td>
@@ -417,7 +514,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/userdetail/userdetail.component.ts:16</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/userdetail/userdetail.component.ts:17</a></div>
                             </td>
                         </tr>
 
@@ -450,7 +547,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/userdetail/userdetail.component.ts:17</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/userdetail/userdetail.component.ts:18</a></div>
                             </td>
                         </tr>
 
@@ -478,7 +575,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/userdetail/userdetail.component.ts:15</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/userdetail/userdetail.component.ts:16</a></div>
                             </td>
                         </tr>
 
@@ -506,7 +603,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/userdetail/userdetail.component.ts:14</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/userdetail/userdetail.component.ts:15</a></div>
                             </td>
                         </tr>
 
@@ -523,72 +620,86 @@
 import { FormGroup, Validators, FormBuilder, Form } from &#x27;@angular/forms&#x27;;
 import { UserDataServiceService } from &#x27;../Service/user-data-service.service&#x27;;
 import { User } from &#x27;../Model/user&#x27;;
-import { Router, ActivatedRouteSnapshot, ActivatedRoute } from &#x27;@angular/router&#x27;;
+import { Router, ActivatedRoute } from &#x27;@angular/router&#x27;;
 import { AuthService } from &#x27;../Service/auth.service&#x27;;
+import { MatSnackBar } from &#x27;@angular/material/snack-bar&#x27;;
 
 @Component({
-    selector: &#x27;app-userdetail&#x27;,
-    templateUrl: &#x27;./userdetail.component.html&#x27;,
-    styleUrls: [&#x27;./userdetail.component.css&#x27;],
+  selector: &#x27;app-userdetail&#x27;,
+  templateUrl: &#x27;./userdetail.component.html&#x27;,
+  styleUrls: [&#x27;./userdetail.component.css&#x27;],
 })
 export class UserdetailComponent implements OnInit {
-    public userDetailForm: FormGroup;
-    public user: User;
-    public isAdmin: boolean;
-    public isEdit: boolean &#x3D; false;
+  public userDetailForm: FormGroup;
+  public user: User;
+  public isAdmin: boolean;
+  public isEdit: boolean &#x3D; false;
 
-    constructor(
-        private formBuilder: FormBuilder,
-        private userService: UserDataServiceService,
-        private router: Router,
-        private route: ActivatedRoute,
-        private authService: AuthService,
-    ) {
-        this.userDetailForm &#x3D; this.formBuilder.group({
-            name: [null, [Validators.required]],
-            username: [null, Validators.required],
-            age: [null, [Validators.required]],
-            city: [null, [Validators.required]],
-            isadmin: false,
+  constructor(
+    private formBuilder: FormBuilder,
+    private userService: UserDataServiceService,
+    private router: Router,
+    private route: ActivatedRoute,
+    private authService: AuthService,
+    private _snackBar: MatSnackBar,
+  ) {
+    this.userDetailForm &#x3D; this.formBuilder.group({
+      name: [null, [Validators.required]],
+      username: [null, Validators.required],
+      age: [null, [Validators.required]],
+      city: [null, [Validators.required]],
+      isadmin: false,
+    });
+  }
+
+  openSnackBar(message: string, action: string) {
+    this._snackBar.open(message, action, {
+      duration: 2000,
+      horizontalPosition: &#x27;right&#x27;,
+      verticalPosition: &#x27;top&#x27;,
+    });
+  }
+
+  ngOnInit(): void {
+    var id &#x3D; this.route.snapshot.paramMap.get(&#x27;id&#x27;);
+    if (id !&#x3D;&#x3D; undefined &amp;&amp; id !&#x3D;&#x3D; null) {
+      this.userService.getUserById(id).subscribe((user: User) &#x3D;&gt; {
+        this.userDetailForm.setValue({
+          name: user.name,
+          username: user.username,
+          age: user.age,
+          city: user.city,
+          isadmin: user.isadmin,
         });
+        this.user &#x3D; user;
+        this.userDetailForm.controls[&#x27;username&#x27;].disable();
+        this.isEdit &#x3D; true;
+      });
     }
 
-    ngOnInit(): void {
-        var id &#x3D; this.route.snapshot.paramMap.get(&#x27;id&#x27;);
-        if (id !&#x3D;&#x3D; undefined &amp;&amp; id !&#x3D;&#x3D; null) {
-            this.userService.getUserById(id).subscribe((user: User) &#x3D;&gt; {
-                this.userDetailForm.setValue({
-                    name: user.name,
-                    username: user.username,
-                    age: user.age,
-                    city: user.city,
-                    isadmin: user.isadmin,
-                });
-                this.userDetailForm.controls[&#x27;username&#x27;].disable();
-                this.isEdit &#x3D; false;
-            });
-        }
+    this.isAdmin &#x3D; this.authService.IsAdmin;
+  }
 
-        this.isAdmin &#x3D; this.authService.IsAdmin;
+  onSubmit(value: User) {
+    if (this.isEdit) {
+      value.id &#x3D; this.user.id;
+      this.userService.updateUser(value).subscribe((x) &#x3D;&gt; {
+        this.openSnackBar(&#x27;Updated Successfully&#x27;, &#x27;Update&#x27;);
+        this.router.navigate([&#x27;/users&#x27;]);
+      });
+    } else {
+      this.userService.createUsers(value).subscribe((x) &#x3D;&gt; {
+        this.openSnackBar(&#x27;Created Successfully&#x27;, &#x27;Create&#x27;);
+        this.router.navigate([&#x27;/users&#x27;]);
+      });
     }
-
-    onSubmit(value: User) {
-        if (this.isEdit) {
-            this.userService.updateUser(value).subscribe((x) &#x3D;&gt; {
-                this.router.navigate([&#x27;/users&#x27;]);
-            });
-        } else {
-            this.userService.createUsers(value).subscribe((x) &#x3D;&gt; {
-                this.router.navigate([&#x27;/users&#x27;]);
-            });
-        }
-    }
+  }
 }
 </code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;div align&#x3D;&quot;center&quot;&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;div align&#x3D;&quot;center&quot; style&#x3D;&quot;min-height: 35em;&quot;&gt;
     &lt;mat-card class&#x3D;&quot;card&quot; align&#x3D;&quot;center&quot;&gt;
         &lt;mat-card-header&gt;
             &lt;mat-card-title&gt;User Details&lt;/mat-card-title&gt;
@@ -663,6 +774,10 @@ export class UserdetailComponent implements OnInit {
 button {
     margin-left: 0.5em;
 }
+
+.mat-card-header{
+    display:block;
+}
 </code></pre>
     </div>
 
@@ -691,8 +806,8 @@ button {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div align="center">    <mat-card class="card" align="center">        <mat-card-header>            <mat-card-title>User Details</mat-card-title>        </mat-card-header>        <mat-card-content>            <form [formGroup]="userDetailForm" (ngSubmit)="onSubmit(userDetailForm.value)">                <mat-form-field appearance="fill" class="form-element">                    <mat-label>Enter your name</mat-label>                    <input matInput placeholder="name" required formControlName="name" />                </mat-form-field>                <br />                <mat-form-field appearance="fill" class="form-element">                    <mat-label>Enter your username</mat-label>                    <input matInput placeholder="username" required formControlName="username" />                </mat-form-field>                <br />                <mat-form-field appearance="fill" class="form-element">                    <mat-label>Enter your age</mat-label>                    <input matInput placeholder="age" required formControlName="age" />                </mat-form-field>                <br />                <mat-form-field appearance="fill" class="form-element">                    <mat-label>Enter your city</mat-label>                    <input matInput placeholder="city" required formControlName="city" />                </mat-form-field>                <br />                <mat-slide-toggle                    color="primary"                    formControlName="isadmin"                    appearance="fill"                    class="form-element"                    *ngIf="isAdmin"                >                    Admin                </mat-slide-toggle>                <br />                <button                    mat-raised-button                    color="primary"                    type="submit"                    class="button"                    [disabled]="!userDetailForm.valid"                >                    Submit                </button>                <button mat-raised-button color="warn" routerLink="/users">Cancel</button>            </form>        </mat-card-content>    </mat-card></div></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'UserdetailComponent', 'selector': 'app-userdetail'},{'name': 'UsersComponent', 'selector': 'app-users'}];
+        var COMPONENT_TEMPLATE = '<div><div align="center" style="min-height: 35em;">    <mat-card class="card" align="center">        <mat-card-header>            <mat-card-title>User Details</mat-card-title>        </mat-card-header>        <mat-card-content>            <form [formGroup]="userDetailForm" (ngSubmit)="onSubmit(userDetailForm.value)">                <mat-form-field appearance="fill" class="form-element">                    <mat-label>Enter your name</mat-label>                    <input matInput placeholder="name" required formControlName="name" />                </mat-form-field>                <br />                <mat-form-field appearance="fill" class="form-element">                    <mat-label>Enter your username</mat-label>                    <input matInput placeholder="username" required formControlName="username" />                </mat-form-field>                <br />                <mat-form-field appearance="fill" class="form-element">                    <mat-label>Enter your age</mat-label>                    <input matInput placeholder="age" required formControlName="age" />                </mat-form-field>                <br />                <mat-form-field appearance="fill" class="form-element">                    <mat-label>Enter your city</mat-label>                    <input matInput placeholder="city" required formControlName="city" />                </mat-form-field>                <br />                <mat-slide-toggle                    color="primary"                    formControlName="isadmin"                    appearance="fill"                    class="form-element"                    *ngIf="isAdmin"                >                    Admin                </mat-slide-toggle>                <br />                <button                    mat-raised-button                    color="primary"                    type="submit"                    class="button"                    [disabled]="!userDetailForm.valid"                >                    Submit                </button>                <button mat-raised-button color="warn" routerLink="/users">Cancel</button>            </form>        </mat-card-content>    </mat-card></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'UserdetailComponent', 'selector': 'app-userdetail'},{'name': 'UsersComponent', 'selector': 'app-users'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'UserdetailComponent'};
 </script>

@@ -159,6 +159,9 @@
                             <li>
                                 <a href="#ngOnInit">ngOnInit</a>
                             </li>
+                            <li>
+                                <a href="#openSnackBar">openSnackBar</a>
+                            </li>
                         </ul>
                     </td>
                 </tr>
@@ -177,12 +180,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(userDataService: <a href="../injectables/UserDataServiceService.html">UserDataServiceService</a>, authService: <a href="../injectables/AuthService.html">AuthService</a>)</code>
+<code>constructor(userDataService: <a href="../injectables/UserDataServiceService.html">UserDataServiceService</a>, authService: <a href="../injectables/AuthService.html">AuthService</a>, _snackBar: MatSnackBar)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/users/users.component.ts:13</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/users/users.component.ts:15</a></div>
                             </td>
                         </tr>
 
@@ -223,6 +226,18 @@
                                                     </td>
                                                     
                                                 </tr>
+                                                <tr>
+                                                        <td>_snackBar</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatSnackBar</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
                                         </tbody>
                                     </table>
                             </div>
@@ -256,15 +271,15 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>Delete(id)</code>
+<code>Delete(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="33"
-                            class="link-to-prism">src/app/users/users.component.ts:33</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="52"
+                            class="link-to-prism">src/app/users/users.component.ts:52</a></div>
                 </td>
             </tr>
 
@@ -278,12 +293,16 @@
                             <thead>
                                 <tr>
                                     <td>Name</td>
+                                    <td>Type</td>
                                     <td>Optional</td>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
 
                                     <td>
                                         No
@@ -329,8 +348,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="19"
-                            class="link-to-prism">src/app/users/users.component.ts:19</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="33"
+                            class="link-to-prism">src/app/users/users.component.ts:33</a></div>
                 </td>
             </tr>
 
@@ -341,6 +360,88 @@
                     <div class="io-description">
                         <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openSnackBar"></a>
+                    <span class="name">
+                        <b>
+                            openSnackBar
+                        </b>
+                        <a href="#openSnackBar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openSnackBar(message: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, action: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="25"
+                            class="link-to-prism">src/app/users/users.component.ts:25</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>message</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>action</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
                     </div>
                 </td>
             </tr>
@@ -378,7 +479,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/users/users.component.ts:13</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/users/users.component.ts:15</a></div>
                             </td>
                         </tr>
 
@@ -406,7 +507,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/users/users.component.ts:17</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/users/users.component.ts:23</a></div>
                             </td>
                         </tr>
 
@@ -439,7 +540,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/users/users.component.ts:12</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/users/users.component.ts:14</a></div>
                             </td>
                         </tr>
 
@@ -452,10 +553,12 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, ViewChild } from &#x27;@angular/core&#x27;;
 import { User } from &#x27;../Model/user&#x27;;
 import { UserDataServiceService } from &#x27;../Service/user-data-service.service&#x27;;
 import { AuthService } from &#x27;../Service/auth.service&#x27;;
+import { MatSnackBar } from &#x27;@angular/material/snack-bar&#x27;;
+
 
 @Component({
     selector: &#x27;app-users&#x27;,
@@ -466,14 +569,30 @@ export class UsersComponent implements OnInit {
     public users: User[] &#x3D; [];
     public displayedColumns: string[] &#x3D; [&#x27;id&#x27;, &#x27;name&#x27;, &#x27;username&#x27;, &#x27;age&#x27;, &#x27;city&#x27;, &#x27;action&#x27;];
 
-    constructor(private userDataService: UserDataServiceService, private authService: AuthService) {}
+    constructor(
+        private userDataService: UserDataServiceService,
+        private authService: AuthService,
+        private _snackBar: MatSnackBar,
+    ) { }
 
     public isAdmin: boolean;
+
+    openSnackBar(message: string, action: string) {
+        this._snackBar.open(message, action, {
+            duration: 2000,
+            horizontalPosition: &#x27;right&#x27;,
+            verticalPosition: &#x27;top&#x27;,
+        });
+    }
 
     ngOnInit(): void {
         this.isAdmin &#x3D; this.authService.IsAdmin;
         if (this.isAdmin) {
-            this.userDataService.getUsers().subscribe((users) &#x3D;&gt; (this.users &#x3D; users));
+            this.userDataService.getUsers().subscribe((users) &#x3D;&gt; {
+
+                this.users &#x3D; users;
+                this.openSnackBar(&#x27;Data Fetched Succesfully&#x27;, &#x27;Get&#x27;);
+            });
         } else {
             this.userDataService.getUserById(this.authService.currentUserValue().id.toString()).subscribe((user) &#x3D;&gt; {
                 debugger;
@@ -481,64 +600,68 @@ export class UsersComponent implements OnInit {
                 this.users.push(user);
                 console.log(user);
             });
+            this.openSnackBar(&#x27;Data Fetched Succesfully&#x27;, &#x27;Get&#x27;);
         }
     }
 
-    Delete(id): void {
-        this.userDataService.deleteUsers(id).subscribe((users) &#x3D;&gt; this.ngOnInit());
+    Delete(id: string): void {
+        this.userDataService.deleteUsers(id).subscribe((users) &#x3D;&gt; {
+            this.ngOnInit();
+            this.openSnackBar(&#x27;Data Fetched Succesfully&#x27;, &#x27;Get&#x27;);
+        });
     }
 }
 </code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;div align&#x3D;&quot;center&quot;&gt;
-    &lt;a routerLink&#x3D;&quot;/userDetails&quot; mat-button color&#x3D;&quot;primary&quot; *ngIf&#x3D;&quot;isAdmin&quot;&gt;Create New User&lt;/a&gt;
-&lt;/div&gt;
-&lt;table mat-table [dataSource]&#x3D;&quot;users&quot; class&#x3D;&quot;mat-elevation-z8&quot;&gt;
-    &lt;ng-container matColumnDef&#x3D;&quot;id&quot;&gt;
-        &lt;th mat-header-cell *matHeaderCellDef&gt;No.&lt;/th&gt;
-        &lt;td mat-cell *matCellDef&#x3D;&quot;let element&quot;&gt;{{ element.id }}&lt;/td&gt;
-    &lt;/ng-container&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;div align&#x3D;&quot;center&quot; style&#x3D;&quot;min-height: 35em;&quot;&gt;
+    &lt;a routerLink&#x3D;&quot;/userDetails&quot; mat-button color&#x3D;&quot;primary&quot; *ngIf&#x3D;&quot;isAdmin&quot; style&#x3D;&quot;padding-bottom: 2em;&quot;&gt;
+        Create New User
+    &lt;/a&gt;
+    &lt;mat-progress-spinner class&#x3D;&quot;example-margin&quot; color&#x3D;&quot;primary&quot; mode&#x3D;&quot;indeterminate&quot; *ngIf&#x3D;&quot;users.length &#x3D;&#x3D; 0&quot;&gt;
+    &lt;/mat-progress-spinner&gt;
 
-    &lt;ng-container matColumnDef&#x3D;&quot;name&quot;&gt;
-        &lt;th mat-header-cell *matHeaderCellDef&gt;Name&lt;/th&gt;
-        &lt;td mat-cell *matCellDef&#x3D;&quot;let element&quot;&gt;{{ element.name }}&lt;/td&gt;
-    &lt;/ng-container&gt;
+    &lt;table mat-table [dataSource]&#x3D;&quot;users&quot; class&#x3D;&quot;mat-elevation-z8&quot; *ngIf&#x3D;&quot;users.length &gt; 0&quot;&gt;
+        &lt;ng-container matColumnDef&#x3D;&quot;id&quot;&gt;
+            &lt;th mat-header-cell *matHeaderCellDef&gt;No.&lt;/th&gt;
+            &lt;td mat-cell *matCellDef&#x3D;&quot;let element&quot;&gt;{{ element.id }}&lt;/td&gt;
+        &lt;/ng-container&gt;
 
-    &lt;ng-container matColumnDef&#x3D;&quot;username&quot;&gt;
-        &lt;th mat-header-cell *matHeaderCellDef&gt;User Name&lt;/th&gt;
-        &lt;td mat-cell *matCellDef&#x3D;&quot;let element&quot;&gt;{{ element.username }}&lt;/td&gt;
-    &lt;/ng-container&gt;
+        &lt;ng-container matColumnDef&#x3D;&quot;name&quot;&gt;
+            &lt;th mat-header-cell *matHeaderCellDef&gt;Name&lt;/th&gt;
+            &lt;td mat-cell *matCellDef&#x3D;&quot;let element&quot;&gt;{{ element.name }}&lt;/td&gt;
+        &lt;/ng-container&gt;
 
-    &lt;ng-container matColumnDef&#x3D;&quot;age&quot;&gt;
-        &lt;th mat-header-cell *matHeaderCellDef&gt;Age&lt;/th&gt;
-        &lt;td mat-cell *matCellDef&#x3D;&quot;let element&quot;&gt;{{ element.age }}&lt;/td&gt;
-    &lt;/ng-container&gt;
+        &lt;ng-container matColumnDef&#x3D;&quot;username&quot;&gt;
+            &lt;th mat-header-cell *matHeaderCellDef&gt;User Name&lt;/th&gt;
+            &lt;td mat-cell *matCellDef&#x3D;&quot;let element&quot;&gt;{{ element.username }}&lt;/td&gt;
+        &lt;/ng-container&gt;
 
-    &lt;ng-container matColumnDef&#x3D;&quot;city&quot;&gt;
-        &lt;th mat-header-cell *matHeaderCellDef&gt;City&lt;/th&gt;
-        &lt;td mat-cell *matCellDef&#x3D;&quot;let element&quot;&gt;{{ element.city }}&lt;/td&gt;
-    &lt;/ng-container&gt;
+        &lt;ng-container matColumnDef&#x3D;&quot;age&quot;&gt;
+            &lt;th mat-header-cell *matHeaderCellDef&gt;Age&lt;/th&gt;
+            &lt;td mat-cell *matCellDef&#x3D;&quot;let element&quot;&gt;{{ element.age }}&lt;/td&gt;
+        &lt;/ng-container&gt;
 
-    &lt;ng-container matColumnDef&#x3D;&quot;action&quot;&gt;
-        &lt;th mat-header-cell *matHeaderCellDef&gt;Action&lt;/th&gt;
-        &lt;td mat-cell *matCellDef&#x3D;&quot;let element&quot;&gt;
-            &lt;button
-                mat-raised-button
-                class&#x3D;&quot;success&quot;
-                [routerLink]&#x3D;&quot;[&#x27;/userDetails&#x27;, element.id]&quot;
-                routerLinkActive&#x3D;&quot;active&quot;
-            &gt;
-                Edit
-            &lt;/button&gt;
-            &lt;button mat-raised-button color&#x3D;&quot;warn&quot; (click)&#x3D;&quot;Delete(element.id)&quot; *ngIf&#x3D;&quot;isAdmin&quot;&gt;Delete&lt;/button&gt;
-        &lt;/td&gt;
-    &lt;/ng-container&gt;
-    &lt;tr mat-header-row *matHeaderRowDef&#x3D;&quot;displayedColumns&quot;&gt;&lt;/tr&gt;
-    &lt;tr mat-row *matRowDef&#x3D;&quot;let row; columns: displayedColumns&quot;&gt;&lt;/tr&gt;
-&lt;/table&gt;
-</code></pre>
+        &lt;ng-container matColumnDef&#x3D;&quot;city&quot;&gt;
+            &lt;th mat-header-cell *matHeaderCellDef&gt;City&lt;/th&gt;
+            &lt;td mat-cell *matCellDef&#x3D;&quot;let element&quot;&gt;{{ element.city }}&lt;/td&gt;
+        &lt;/ng-container&gt;
+
+        &lt;ng-container matColumnDef&#x3D;&quot;action&quot;&gt;
+            &lt;th mat-header-cell *matHeaderCellDef&gt;Action&lt;/th&gt;
+            &lt;td mat-cell *matCellDef&#x3D;&quot;let element&quot;&gt;
+                &lt;button mat-flat-button class&#x3D;&quot;success&quot; [routerLink]&#x3D;&quot;[&#x27;/userDetails&#x27;, element.id]&quot;
+                    routerLinkActive&#x3D;&quot;active&quot;&gt;
+                    Edit
+                &lt;/button&gt;
+                &lt;button mat-flat-button color&#x3D;&quot;warn&quot; (click)&#x3D;&quot;Delete(element.id)&quot; *ngIf&#x3D;&quot;isAdmin&quot;&gt;Delete&lt;/button&gt;
+            &lt;/td&gt;
+        &lt;/ng-container&gt;
+        &lt;tr mat-header-row *matHeaderRowDef&#x3D;&quot;displayedColumns&quot;&gt;&lt;/tr&gt;
+        &lt;tr mat-row *matRowDef&#x3D;&quot;let row; columns: displayedColumns&quot;&gt;&lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/div&gt;</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-styleData">
@@ -546,6 +669,9 @@ export class UsersComponent implements OnInit {
                     <code>./users.component.css</code>
                 </p>
                 <pre class="line-numbers"><code class="language-scss">table {
+    min-width: 150px;
+    max-width: 1400px;
+
     width: 100%;
 }
 
@@ -585,8 +711,8 @@ button {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div align="center">    <a routerLink="/userDetails" mat-button color="primary" *ngIf="isAdmin">Create New User</a></div><table mat-table [dataSource]="users" class="mat-elevation-z8">    <ng-container matColumnDef="id">        <th mat-header-cell *matHeaderCellDef>No.</th>        <td mat-cell *matCellDef="let element">{{ element.id }}</td>    </ng-container>    <ng-container matColumnDef="name">        <th mat-header-cell *matHeaderCellDef>Name</th>        <td mat-cell *matCellDef="let element">{{ element.name }}</td>    </ng-container>    <ng-container matColumnDef="username">        <th mat-header-cell *matHeaderCellDef>User Name</th>        <td mat-cell *matCellDef="let element">{{ element.username }}</td>    </ng-container>    <ng-container matColumnDef="age">        <th mat-header-cell *matHeaderCellDef>Age</th>        <td mat-cell *matCellDef="let element">{{ element.age }}</td>    </ng-container>    <ng-container matColumnDef="city">        <th mat-header-cell *matHeaderCellDef>City</th>        <td mat-cell *matCellDef="let element">{{ element.city }}</td>    </ng-container>    <ng-container matColumnDef="action">        <th mat-header-cell *matHeaderCellDef>Action</th>        <td mat-cell *matCellDef="let element">            <button                mat-raised-button                class="success"                [routerLink]="[\'/userDetails\', element.id]"                routerLinkActive="active"            >                Edit            </button>            <button mat-raised-button color="warn" (click)="Delete(element.id)" *ngIf="isAdmin">Delete</button>        </td>    </ng-container>    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr></table></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'UserdetailComponent', 'selector': 'app-userdetail'},{'name': 'UsersComponent', 'selector': 'app-users'}];
+        var COMPONENT_TEMPLATE = '<div><div align="center" style="min-height: 35em;">    <a routerLink="/userDetails" mat-button color="primary" *ngIf="isAdmin" style="padding-bottom: 2em;">        Create New User    </a>    <mat-progress-spinner class="example-margin" color="primary" mode="indeterminate" *ngIf="users.length == 0">    </mat-progress-spinner>    <table mat-table [dataSource]="users" class="mat-elevation-z8" *ngIf="users.length > 0">        <ng-container matColumnDef="id">            <th mat-header-cell *matHeaderCellDef>No.</th>            <td mat-cell *matCellDef="let element">{{ element.id }}</td>        </ng-container>        <ng-container matColumnDef="name">            <th mat-header-cell *matHeaderCellDef>Name</th>            <td mat-cell *matCellDef="let element">{{ element.name }}</td>        </ng-container>        <ng-container matColumnDef="username">            <th mat-header-cell *matHeaderCellDef>User Name</th>            <td mat-cell *matCellDef="let element">{{ element.username }}</td>        </ng-container>        <ng-container matColumnDef="age">            <th mat-header-cell *matHeaderCellDef>Age</th>            <td mat-cell *matCellDef="let element">{{ element.age }}</td>        </ng-container>        <ng-container matColumnDef="city">            <th mat-header-cell *matHeaderCellDef>City</th>            <td mat-cell *matCellDef="let element">{{ element.city }}</td>        </ng-container>        <ng-container matColumnDef="action">            <th mat-header-cell *matHeaderCellDef>Action</th>            <td mat-cell *matCellDef="let element">                <button mat-flat-button class="success" [routerLink]="[\'/userDetails\', element.id]"                    routerLinkActive="active">                    Edit                </button>                <button mat-flat-button color="warn" (click)="Delete(element.id)" *ngIf="isAdmin">Delete</button>            </td>        </ng-container>        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>    </table></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'UserdetailComponent', 'selector': 'app-userdetail'},{'name': 'UsersComponent', 'selector': 'app-users'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'UsersComponent'};
 </script>

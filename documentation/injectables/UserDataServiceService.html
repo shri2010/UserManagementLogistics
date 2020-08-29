@@ -557,7 +557,7 @@ export class UserDataServiceService {
     }
 
     updateUser(user: User): Observable&lt;User&gt; {
-        return this.httpClient.patch&lt;User&gt;(this.url, User);
+        return this.httpClient.patch&lt;User&gt;(this.url + &#x27;/&#x27; + user.id, user);
     }
 
     deleteUsers(id: string): Observable&lt;User&gt; {

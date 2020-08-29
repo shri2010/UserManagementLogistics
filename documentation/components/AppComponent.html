@@ -518,27 +518,39 @@ export class AppComponent implements OnInit {
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;mat-toolbar color&#x3D;&quot;primary&quot;&gt;
-    &lt;span&gt;
-        &lt;button mat-button routerLink&#x3D;&quot;/users&quot;&gt;User Management&lt;/button&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;app&quot;&gt;
 
-        &lt;button mat-button routerLink&#x3D;&quot;/users&quot;&gt;&lt;mat-icon&gt;home&lt;/mat-icon&gt;&lt;/button&gt;
-    &lt;/span&gt;
-    &lt;span class&#x3D;&quot;spacer&quot;&gt;&lt;/span&gt;
-    &lt;button mat-button routerLink&#x3D;&quot;/login&quot; class&#x3D;&quot;loginButton&quot; *ngIf&#x3D;&quot;!isLoggedIn&quot;&gt;
-        &lt;mat-icon&gt;power_settings_new&lt;/mat-icon&gt;
+    &lt;mat-toolbar color&#x3D;&quot;primary&quot;&gt;
+        &lt;span&gt;
 
-        Login
-    &lt;/button&gt;
-    &lt;button mat-button class&#x3D;&quot;loginButton&quot; (click)&#x3D;&quot;logout()&quot; *ngIf&#x3D;&quot;isLoggedIn&quot;&gt;
-        &lt;mat-icon&gt;power_settings_new&lt;/mat-icon&gt;
 
-        Logout
-    &lt;/button&gt;
-&lt;/mat-toolbar&gt;
+            &lt;button mat-button routerLink&#x3D;&quot;/users&quot;&gt;
+                &lt;mat-icon&gt;home&lt;/mat-icon&gt;
+            &lt;/button&gt;
 
-&lt;div class&#x3D;&quot;mat-app-background basic-container&quot;&gt;&lt;router-outlet&gt;&lt;/router-outlet&gt;&lt;/div&gt;
-</code></pre>
+            &lt;button mat-button routerLink&#x3D;&quot;/users&quot;&gt;User Management&lt;/button&gt;
+        &lt;/span&gt;
+        &lt;span class&#x3D;&quot;spacer&quot;&gt;&lt;/span&gt;
+        &lt;button mat-button routerLink&#x3D;&quot;/login&quot; class&#x3D;&quot;loginButton&quot; *ngIf&#x3D;&quot;!isLoggedIn&quot;&gt;
+            &lt;mat-icon&gt;power_settings_new&lt;/mat-icon&gt;
+
+            Login
+        &lt;/button&gt;
+        &lt;button mat-button class&#x3D;&quot;loginButton&quot; (click)&#x3D;&quot;logout()&quot; *ngIf&#x3D;&quot;isLoggedIn&quot;&gt;
+            &lt;mat-icon&gt;power_settings_new&lt;/mat-icon&gt;
+
+            Logout
+        &lt;/button&gt;
+    &lt;/mat-toolbar&gt;
+
+    &lt;div&gt;
+        &lt;router-outlet&gt;&lt;/router-outlet&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;app-footer&gt;&lt;/app-footer&gt;
+&lt;/div&gt;</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-styleData">
@@ -548,6 +560,13 @@ export class AppComponent implements OnInit {
                 <pre class="line-numbers"><code class="language-scss">.spacer {
     flex: 1 1 auto;
 }
+
+.app{
+    position: relative;
+    padding-bottom: 3em;
+}
+
+
 </code></pre>
     </div>
 
@@ -576,8 +595,8 @@ export class AppComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><mat-toolbar color="primary">    <span>        <button mat-button routerLink="/users">User Management</button>        <button mat-button routerLink="/users"><mat-icon>home</mat-icon></button>    </span>    <span class="spacer"></span>    <button mat-button routerLink="/login" class="loginButton" *ngIf="!isLoggedIn">        <mat-icon>power_settings_new</mat-icon>        Login    </button>    <button mat-button class="loginButton" (click)="logout()" *ngIf="isLoggedIn">        <mat-icon>power_settings_new</mat-icon>        Logout    </button></mat-toolbar><div class="mat-app-background basic-container"><router-outlet></router-outlet></div></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'UserdetailComponent', 'selector': 'app-userdetail'},{'name': 'UsersComponent', 'selector': 'app-users'}];
+        var COMPONENT_TEMPLATE = '<div><div class="app">    <mat-toolbar color="primary">        <span>            <button mat-button routerLink="/users">                <mat-icon>home</mat-icon>            </button>            <button mat-button routerLink="/users">User Management</button>        </span>        <span class="spacer"></span>        <button mat-button routerLink="/login" class="loginButton" *ngIf="!isLoggedIn">            <mat-icon>power_settings_new</mat-icon>            Login        </button>        <button mat-button class="loginButton" (click)="logout()" *ngIf="isLoggedIn">            <mat-icon>power_settings_new</mat-icon>            Logout        </button>    </mat-toolbar>    <div>        <router-outlet></router-outlet>    </div></div><div>    <app-footer></app-footer></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'UserdetailComponent', 'selector': 'app-userdetail'},{'name': 'UsersComponent', 'selector': 'app-users'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'AppComponent'};
 </script>

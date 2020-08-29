@@ -449,10 +449,10 @@ export class LoginComponent implements OnInit {
         private router: Router,
         private userDataService: UserDataServiceService,
         private authService: AuthService,
-    ) { }
+    ) {}
     username: string;
     password: string;
-    ngOnInit() { }
+    ngOnInit() {}
     login(): void {
         this.userDataService.getUsers().subscribe((users: User[]) &#x3D;&gt; {
             var index &#x3D; users.findIndex((usr) &#x3D;&gt; this.username &#x3D;&#x3D; usr.username);
@@ -487,28 +487,23 @@ export class LoginComponent implements OnInit {
     &lt;/mat-card-header&gt;
     &lt;mat-card-content&gt;
         &lt;form&gt;
-            &lt;mat-form-field&gt;
+            &lt;mat-form-field appearance&#x3D;&quot;fill&quot; class&#x3D;&quot;form-element&quot;&gt;
+                &lt;mat-label&gt;Enter your Username&lt;/mat-label&gt;
                 &lt;input matInput placeholder&#x3D;&quot;Username&quot; [(ngModel)]&#x3D;&quot;username&quot; name&#x3D;&quot;username&quot; required /&gt;
             &lt;/mat-form-field&gt;
             &lt;br /&gt;
 
-            &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
-                &lt;input
-                    matInput
-                    placeholder&#x3D;&quot;Password&quot;
-                    [(ngModel)]&#x3D;&quot;password&quot;
-                    type&#x3D;&quot;password&quot;
-                    name&#x3D;&quot;password&quot;
-                    required
-                /&gt;
+            &lt;mat-form-field class&#x3D;&quot;example-full-width&quot; appearance&#x3D;&quot;fill&quot; class&#x3D;&quot;form-element&quot;&gt;
+                &lt;mat-label&gt;Enter your password&lt;/mat-label&gt;
+                &lt;input matInput placeholder&#x3D;&quot;Password&quot; [(ngModel)]&#x3D;&quot;password&quot; type&#x3D;&quot;password&quot; name&#x3D;&quot;password&quot;
+                    required /&gt;
             &lt;/mat-form-field&gt;
         &lt;/form&gt;
     &lt;/mat-card-content&gt;
     &lt;mat-card-actions&gt;
         &lt;button mat-raised-button (click)&#x3D;&quot;login()&quot; color&#x3D;&quot;primary&quot; [disabled]&#x3D;&quot;isValid()&quot;&gt;Login&lt;/button&gt;
     &lt;/mat-card-actions&gt;
-&lt;/mat-card&gt;
-</code></pre>
+&lt;/mat-card&gt;</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-styleData">
@@ -526,6 +521,15 @@ export class LoginComponent implements OnInit {
 mat-form-field {
     display: block;
     padding: 5px 0px 25px 2px;
+}
+
+.mat-card-header{
+    display:block;
+}
+
+.form-element {
+    padding: 5px 0px 25px 2px;
+    width: 100%;
 }
 </code></pre>
     </div>
@@ -555,8 +559,8 @@ mat-form-field {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><mat-card class="card" align="center">    <mat-card-header>        <mat-card-title>Login</mat-card-title>    </mat-card-header>    <mat-card-content>        <form>            <mat-form-field>                <input matInput placeholder="Username" [(ngModel)]="username" name="username" required />            </mat-form-field>            <br />            <mat-form-field class="example-full-width">                <input                    matInput                    placeholder="Password"                    [(ngModel)]="password"                    type="password"                    name="password"                    required                />            </mat-form-field>        </form>    </mat-card-content>    <mat-card-actions>        <button mat-raised-button (click)="login()" color="primary" [disabled]="isValid()">Login</button>    </mat-card-actions></mat-card></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'UserdetailComponent', 'selector': 'app-userdetail'},{'name': 'UsersComponent', 'selector': 'app-users'}];
+        var COMPONENT_TEMPLATE = '<div><mat-card class="card" align="center">    <mat-card-header>        <mat-card-title>Login</mat-card-title>    </mat-card-header>    <mat-card-content>        <form>            <mat-form-field appearance="fill" class="form-element">                <mat-label>Enter your Username</mat-label>                <input matInput placeholder="Username" [(ngModel)]="username" name="username" required />            </mat-form-field>            <br />            <mat-form-field class="example-full-width" appearance="fill" class="form-element">                <mat-label>Enter your password</mat-label>                <input matInput placeholder="Password" [(ngModel)]="password" type="password" name="password"                    required />            </mat-form-field>        </form>    </mat-card-content>    <mat-card-actions>        <button mat-raised-button (click)="login()" color="primary" [disabled]="isValid()">Login</button>    </mat-card-actions></mat-card></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'UserdetailComponent', 'selector': 'app-userdetail'},{'name': 'UsersComponent', 'selector': 'app-users'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'LoginComponent'};
 </script>
